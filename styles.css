@@ -1,3 +1,16 @@
+:root{
+    --primary-color:#f9fafb;
+    --secondary-color: #030712;
+    --links-color:blue;
+    --hoverLinks-color:purple;
+    --background:linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    --font-family: 'Inter', sans-serif;
+    --primary-border: 0.5px rgba(0, 0, 0, 0.2) solid;
+    --secondary-border: 1px #D1D5DB solid;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +18,17 @@
     text-decoration: none;
 }
 
-/* Estilos para el header */
+/* Header styles */
 .header {
     padding: 16px 80px;
-    background: #030712;
-    border-bottom: 0.5px rgba(0, 0, 0, 0.2) solid;
+    background: var(--background);
+    border-bottom: var(--primary-border);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Estilos para el contenedor del header */
+/* Header container styles */
 .header-container {
     flex: 1;
     padding-left: 32px;
@@ -24,19 +37,19 @@
     align-items: center;
 }
 
-/* Estilos para el texto del nombre en el header */
+/* Name text in header styles */
 .header-textName {
     margin-right: 463px;
     text-align: center;
-    color: #F9FAFB;
+    color:var(--primary-color);
     font-size: 30px;
-    font-family: Inter;
+    font-family: var(--font-family);
     font-weight: 700;
     line-height: 36px;
     word-wrap: break-word;
 }
 
-/* Estilos para las opciones del header */
+/* header options styles */
 .header-options {
     margin-left: 200px;
     display: flex;
@@ -44,17 +57,17 @@
     gap: 24px;
 }
 
-/* Estilos para las opciones de navegación */
+/* Navigation options styles */
 .nav-option {
     display: flex;
     align-items: center;
 }
 
-/* Estilos para el texto de navegación */
+/*Navigation options text styles */
 .nav-text {
-    color: #D1D5DB;
+    color: var(--primary-color);
     font-size: 16px;
-    font-family: Inter;
+    font-family: var(--font-family);
     font-weight: 500;
     line-height: 24px;
     word-wrap: break-word;
@@ -65,7 +78,7 @@
     height: 0px;
     transform: rotate(-90deg);
     transform-origin: 0 0;
-    border: 0.50px #1F2937 solid
+    border: var(--primary-border)
 }
 
 .nav-modeIcon {
@@ -91,7 +104,7 @@
 }
 
 main{
-    color: #F9FAFB;
+    color: var(--primary-color);
 }
 
 img {
@@ -100,7 +113,7 @@ img {
     left: 3px;
     top: 3px;
     position: absolute;
-    border: 1px #D1D5DB solid;
+    border: var(--secondary-border);
 }
 
 .modeIcon-containerPosition {
@@ -109,8 +122,7 @@ img {
     left: 19px;
     top: 3px;
     position: absolute;
-    border: 1px #D1D5DB solid;
-
+    border: var(--secondary-border);
 }
 
 .modeIcon-position {
@@ -119,7 +131,7 @@ img {
     left: 17px;
     top: 5px;
     position: absolute;
-    border: 1px #D1D5DB solid;
+    border: var(--secondary-border);
 }
 
 .CVbutton-container {
@@ -127,7 +139,7 @@ img {
     padding-right: 16px;
     padding-top: 6px;
     padding-bottom: 6px;
-    background: #F9FAFB;
+    background:var(--primary-color);
     border-radius: 12px;
     justify-content: center;
     align-items: center;
@@ -136,9 +148,9 @@ img {
 }
 
 .CVbutton {
-    color: #111827;
+    color: var(--secondary-color);
     font-size: 16px;
-    font-family: Inter;
+    font-family: var(--font-family);
     font-weight: 500;
     line-height: 24px;
     word-wrap: break-word;
@@ -151,7 +163,7 @@ section {
     padding-right: 80px;
     padding-top: 96px;
     padding-bottom: 96px;
-    background: #030712;    
+    background: var(--background);    
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
@@ -189,9 +201,9 @@ section {
 }
 
 .section-title {
-    color: #f9fafb;
+    color:var(--primary-color);
     font-size: 60px;
-    font-family: Inter;
+    font-family: var(--font-family);
     font-weight: 700;
     line-height: 72px;
     word-wrap: break-word;
@@ -199,9 +211,9 @@ section {
 
 .header-description {
     width: 768px;
-    color: #d1d5db;
+    color:var(--primary-color);
     font-size: 16px;
-    font-family: Inter;
+    font-family: var(--font-family);
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word;
@@ -229,10 +241,10 @@ section {
 }
 
 a{
-    color: blue;
+    color:var(--links-color);
 }
 
 a:hover{
-    color: purple;
+    color:var(--hoverLinks-color);
     text-decoration: underline;
 }
