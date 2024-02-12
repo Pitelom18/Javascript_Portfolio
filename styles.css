@@ -90,6 +90,10 @@
 
 }
 
+main{
+    color: #F9FAFB;
+}
+
 img {
     width: 18px;
     height: 18px;
@@ -147,7 +151,7 @@ section {
     padding-right: 80px;
     padding-top: 96px;
     padding-bottom: 96px;
-    background: #030712;
+    background: #030712;    
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
@@ -212,4 +216,23 @@ section {
     gap: 8px;
     display: flex;
 
+}
+
+.about-sections{
+    flex: 1;   
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    display: flex;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    color: purple;
+    text-decoration: underline;
 }
